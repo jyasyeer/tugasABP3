@@ -1,0 +1,107 @@
+header {
+    background-color: #333; /* Replace with the color of your choice */
+    padding: 10px 0;
+  }
+  .navbar-brand {
+    color: #fff; /* This is for logo text color */
+    font-size: 1.5em; /* Adjust as needed */
+  }
+  .form-inline {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }  
+  .form-control {
+    margin-right: 5px;
+  }
+
+  .service-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px; /* Adjust to match your design */
+    height: 150px; /* Adjust to match your design */
+    position: relative; /* Add this to position icons and text correctly */
+  }
+  
+  /* Individual service block colors */
+  .analytic { background-color: #44C767; }
+  .creative { background-color: #FF6B6B; }
+  .development { background-color: #FFA500; }
+  .marketing { background-color: #4682B4; }
+  .media { background-color: #8A2BE2; }
+  .optimization { background-color: #FDB45C; }
+  
+  /* Icon Styles */
+  .icon {
+    font-size: 48px; /* Adjust to match your design */
+    margin-right: 10px;
+    position: absolute; /* Add this to position icons */
+    left: 20px; /* Add this to align icons to the left */
+    margin: auto;
+  }
+  .row {
+    margin-right: -0.5rem; /* Adjusts for the right margin on service blocks */
+    margin-left: -0.5rem;
+  }
+  
+  /* Column adjustments */
+  .col-md-6 {
+    padding-right: 0.5rem; /* Adds padding to the right of each column */
+    padding-left: 0.5rem; /* Adds padding to the left of each column */
+  }
+  
+  /* Text Styles */
+  .service-block span {
+    position: absolute; /* Add this to position text */
+    left: 80px; /* Adjust this based on actual size of icons */
+  }
+
+  /* Memberikan warna latar belakang pada kolom */
+.col-md-8, .col-6 {
+  background-color: #f0f0f0; /* Ganti dengan warna yang diinginkan */
+  border: 1px solid #ddd; /* Menambahkan border untuk memisahkan kolom */
+  padding: 10px; /* Menambahkan padding agar kontennya tidak terlalu rapat dengan batas kolom */
+}
+
+.table {
+  /* Custom styles here */
+  border-radius: 8px; /* Example of setting border-radius */
+  overflow: hidden; /* Needed to apply border-radius when using tables */
+}
+
+/* For more specific adjustments, you would need to target the table's cells (td and th) */
+.table th,
+.table td {
+  border-color: #dee2e6; /* Adjust the border color as necessary */
+}
+
+/* If you need to adjust the color of the table header (thead), you can do this: */
+.table thead th {
+  background-color: #343a40; /* Adjust header background color as necessary */
+  color: #fff; /* Adjust text color as necessary */
+}
+
+/* Adjust the body rows */
+.table tbody tr {
+  background-color: #fff; /* Adjust body row background color as necessary */
+}
+
+
+
+  @media (max-width: 768px) {
+    .service-block {
+      /* Adjust spacing for smaller screens if necessary */
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+    .row {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .col-md-6 {
+      padding-right: 0.25rem;
+      padding-left: 0.25rem;
+    }
+  }
